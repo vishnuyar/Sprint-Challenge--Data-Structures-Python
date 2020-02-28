@@ -1,5 +1,6 @@
 import time
 from binary_search_tree import BinarySearchTree
+from collections import deque
 
 start_time = time.time()
 
@@ -11,8 +12,8 @@ f = open('names_2.txt', 'r')
 names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
-duplicates = []  # Return the list of duplicates in this data structure
-
+#duplicates = []  # Return the list of duplicates in this data structure
+duplicates = deque()
 #Runtime complexity of the code is O(n^2) for the nested loops
 
 # Replace the nested for loops below with your improvements
